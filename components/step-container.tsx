@@ -31,21 +31,21 @@ const q2Options = [
   { label: "1年以上", value: "over_1year" },
 ]
 
-// Q3: 来院のお悩み
+// Q3: 来院の症状・目的
 const q3Options = [
-  { label: "不安・パニック症状", value: "anxiety_panic" },
-  { label: "うつ・気分の落ち込み", value: "depression" },
-  { label: "不眠・睡眠の問題", value: "insomnia" },
-  { label: "ストレス・疲労", value: "stress_fatigue" },
-  { label: "その他のご相談", value: "other_consultation" },
+  { label: "風邪・発熱", value: "cold_fever" },
+  { label: "腹痛・消化器症状", value: "abdominal_digestive" },
+  { label: "生活習慣病（高血圧・糖尿病等）", value: "lifestyle_disease" },
+  { label: "健康診断・予防接種", value: "checkup_vaccination" },
+  { label: "その他の症状", value: "other_symptoms" },
 ]
 
 // Q4: 診療の感想
 const q4Options = [
   { label: "とても満足している", value: "very_satisfied" },
   { label: "満足している", value: "satisfied" },
-  { label: "症状の改善を感じている", value: "feeling_improvement" },
-  { label: "通院を継続中", value: "ongoing" },
+  { label: "症状が改善した", value: "feeling_improvement" },
+  { label: "定期的に通院している", value: "ongoing" },
   { label: "まだ判断できない", value: "too_early" },
 ]
 
@@ -164,7 +164,7 @@ export default function StepContainer({ currentStep, formData, setFormData, onAu
             4
           </div>
           <h2 className="font-serif text-2xl md:text-3xl font-medium text-foreground mb-3 text-balance">
-            どのようなお悩みでご来院されましたか？
+            どのような症状や目的で来院されましたか？
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-10">差し支えない範囲でお聞かせください</p>
           <OptionsList
