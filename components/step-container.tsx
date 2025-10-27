@@ -31,21 +31,21 @@ const q2Options = [
   { label: "1年以上", value: "over_1year" },
 ]
 
-// Q3: 来院の症状・目的
+// Q3: 来院のお悩み
 const q3Options = [
-  { label: "不妊検査・相談", value: "infertility_checkup" },
-  { label: "タイミング法", value: "timing_method" },
-  { label: "人工授精（AIH）", value: "aih" },
-  { label: "体外受精（IVF）", value: "ivf" },
-  { label: "その他の治療", value: "other_treatment" },
+  { label: "不安・パニック症状", value: "anxiety_panic" },
+  { label: "うつ・気分の落ち込み", value: "depression" },
+  { label: "不眠・睡眠の問題", value: "insomnia" },
+  { label: "ストレス・疲労", value: "stress_fatigue" },
+  { label: "その他のご相談", value: "other_consultation" },
 ]
 
 // Q4: 診療の感想
 const q4Options = [
   { label: "とても満足している", value: "very_satisfied" },
   { label: "満足している", value: "satisfied" },
-  { label: "治療の効果を感じている", value: "feeling_effect" },
-  { label: "治療を継続中", value: "ongoing" },
+  { label: "症状の改善を感じている", value: "feeling_improvement" },
+  { label: "通院を継続中", value: "ongoing" },
   { label: "まだ判断できない", value: "too_early" },
 ]
 
@@ -164,7 +164,7 @@ export default function StepContainer({ currentStep, formData, setFormData, onAu
             4
           </div>
           <h2 className="font-serif text-2xl md:text-3xl font-medium text-foreground mb-3 text-balance">
-            どのような症状や目的で来院されましたか？
+            どのようなお悩みでご来院されましたか？
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-10">差し支えない範囲でお聞かせください</p>
           <OptionsList
