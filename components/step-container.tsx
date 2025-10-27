@@ -36,7 +36,8 @@ const q3Options = [
   { label: "風邪・発熱", value: "cold_fever" },
   { label: "腹痛・消化器症状", value: "abdominal_digestive" },
   { label: "生活習慣病（高血圧・糖尿病等）", value: "lifestyle_disease" },
-  { label: "健康診断・予防接種", value: "checkup_vaccination" },
+  { label: "健康診断", value: "checkup" },
+  { label: "予防接種", value: "vaccination" },
   { label: "その他の症状", value: "other_symptoms" },
 ]
 
