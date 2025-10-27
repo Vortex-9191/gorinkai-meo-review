@@ -4,14 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Elegant cream and dark green color scheme inspired by Casa Portofornia */
+  /* Warm orange color scheme for mental health clinic (#E98107) */
   --background: oklch(0.97 0.01 85);
   --foreground: oklch(0.25 0.02 160);
   --card: oklch(0.99 0.005 85);
   --card-foreground: oklch(0.25 0.02 160);
   --popover: oklch(0.99 0.005 85);
   --popover-foreground: oklch(0.25 0.02 160);
-  --primary: oklch(0.35 0.08 165);
+  --primary: oklch(0.72 0.16 60);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.93 0.01 85);
   --secondary-foreground: oklch(0.25 0.02 160);
@@ -23,7 +23,7 @@
   --destructive-foreground: oklch(0.99 0 0);
   --border: oklch(0.88 0.01 85);
   --input: oklch(0.88 0.01 85);
-  --ring: oklch(0.35 0.08 165);
+  --ring: oklch(0.72 0.16 60);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
