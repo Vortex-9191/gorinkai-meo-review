@@ -16,9 +16,9 @@ export default function StepIndicator({ currentStep, totalSteps }: StepIndicator
             key={stepNumber}
             className={`h-2 rounded-full transition-all duration-300 ${
               isActive
-                ? "w-8 bg-[oklch(0.45_0.09_155)]"
+                ? "w-8 bg-[oklch(0.72_0.16_60)]"
                 : isCompleted
-                  ? "w-2 bg-[oklch(0.60_0.06_155)]"
+                  ? "w-2 bg-[oklch(0.80_0.12_60)]"
                   : "w-2 bg-[oklch(0.88_0.015_75)]"
             }`}
           />

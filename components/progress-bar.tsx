@@ -17,7 +17,7 @@ export default function ProgressBar({ currentStep, totalSteps }: ProgressBarProp
 
       <div className="relative h-2 bg-[oklch(0.90_0.015_75)] rounded-full overflow-hidden shadow-inner">
         <div
-          className="absolute inset-y-0 left-0 bg-[oklch(0.45_0.09_155)] rounded-full transition-all duration-700 ease-out"
+          className="absolute inset-y-0 left-0 bg-[oklch(0.72_0.16_60)] rounded-full transition-all duration-700 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
