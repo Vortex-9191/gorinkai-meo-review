@@ -102,6 +102,29 @@ ${errorMessage}
 
       console.log("生成されたテキスト:", data.generatedText)
 
+      // スプレッドシートにデータを送信（生成テキストは除外）
+      try {
+        console.log("スプレッドシートにデータを送信中...")
+        const spreadsheetResponse = await fetch("/api/save-to-sheet", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+
+        const spreadsheetData = await spreadsheetResponse.json()
+
+        if (spreadsheetResponse.ok && spreadsheetData.success) {
+          console.log("スプレッドシートへの送信成功")
+        } else {
+          console.error("スプレッドシートへの送信に失敗しました:", spreadsheetData.error)
+        }
+      } catch (spreadsheetError) {
+        // スプレッドシートへの送信エラーは無視（ユーザー体験を損なわない）
+        console.error("スプレッドシートへの送信エラー:", spreadsheetError)
+      }
+
       setResult({
         rating: data.rating,
         generatedText: data.generatedText,
